@@ -7,9 +7,28 @@
     <title>Figures Geometry </title>
 </head>
 <body>
-    <h1>
-        Figuras geometricas 
-    </h1>
+    <header>
+
+        <h1> Figures Geometry</h1>
+        <p>Taller practico de platzi</p>
+
+    </header>
+
+    <section>
+        <h2>Calcula el area y perimetro de un cuadrado</h2>
+        <form>
+            <label for="InputCuadrado">
+                Escribe cuando mide cada lado de tu cuadrado :
+            </label>
+            <input id="InputCuadrado" type="number"/>
+            <button type="button" onclick="calcularPerimetroCuadrado()">
+                calcular el perimetro
+            </button>
+            <button type="button" onclick="calcularAreaCuadrado()">
+                calcular el area
+            </button>
+        </form>
+    </section>
     
     <script src="./fIgures.js"></script>
 </body>
