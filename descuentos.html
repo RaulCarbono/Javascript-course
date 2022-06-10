@@ -13,7 +13,7 @@
         </h1>
          <p> Seguimos Aprendiendo y mejorando cada dia</p>
     </header>
-    <fieldset>
+    <section>
         <legend> Calcula el descuento por producto </legend>
         <form>
             <select name="Transporte" id="">
@@ -27,9 +27,12 @@
             <input type="number"/>
             <label for="InputDescuento"> descuento</label>
             <input type="number"/>
-            <button type="button">calcular</button>
+            <button type="button" onclick="calcularValorDescuento()">
+                calcular
+            </button>
+            <p id="ResultP"></p>
         </form>
-    </fieldset>
+    </section>
 
     <script src="./descuentos.js"></script>
 </body>

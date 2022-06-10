@@ -1,12 +1,8 @@
-function valorOriginal (precio){
-    return precio
-    
-}
-
 function descuentoValor (precio,descuento){
-    const discountValue = valorOriginal(precio) * (100 - descuento) /100
-    console.log(discountValue)
-    return discountValue
+    const discountValue = 100 - descuento;
+    const precioConDescuento = (precio * discountValue) /100;
+    
+    return precioConDescuento
 }
 
 function calcularValorDescuento () {
@@ -16,5 +12,6 @@ function calcularValorDescuento () {
     const discount = descuento.value
     
     const discount1 = descuentoValor(value, discount)
-    alert(discount1)
+    const resultP = document.getElementById("ResultP");
+    resultP.innerText = "El precio con descuento son $" + discount1
 }
