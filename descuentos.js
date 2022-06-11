@@ -5,13 +5,14 @@ function descuentoValor (precio,descuento){
     return precioConDescuento
 }
 
-function calcularValorDescuento () {
-    const input = document.getElementById("InputValor");
-    const value = input.value
-    const descuento = document.getElementById("InputDescuento");
-    const discount = descuento.value
+function onClickCalcularValorDescuento () {
+    const inputPrice = document.getElementById("InputValor");
+    const priceValue = inputPrice.value
+
+    const inputDiscount = document.getElementById("InputDescuento");
+    const discountValue1 = inputDiscount.value
     
-    const discount1 = descuentoValor(value, discount)
+    const priceDiscount = descuentoValor(priceValue, discountValue1)
     const resultP = document.getElementById("ResultP");
-    resultP.innerText = "El precio con descuento son $" + discount1
+    resultP.innerText = "El precio con descuento son $" + priceDiscount
 }
